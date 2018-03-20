@@ -11,7 +11,7 @@ log('gulp started');
 
 gulp.task('connect',function () {
     connect.server({
-        root:['app'],
+        root:config.root,
         port:config.port,
         base:config.devBaseUrl,
         livereload:true
