@@ -1,7 +1,18 @@
 'use strict';
 
-var myAppModule=angular.module('myApp',[]);
 
-myAppModule.controller('myController',function($scope){
-
-});
+angular.module('app', [
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngSanitize',
+    'ngTouch',
+    'ngStorage',
+    'ui.router',
+    'ui.bootstrap',
+    'ui.load',
+    'ui.jq',
+    'ui.validate',
+    'oc.lazyLoad',
+    'pascalprecht.translate'
+]);
