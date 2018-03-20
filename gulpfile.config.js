@@ -5,7 +5,8 @@ module.exports=function () {
         devBaseUrl:'http:localhost',
         paths:{
             dest:'./src/libs',
-            js:'./src/app/**/*.js'
+            js:'./src/app/**/*.js',
+            less:'src/css/less/*.less'
         }
     }
     return config;

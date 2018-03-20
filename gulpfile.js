@@ -1,11 +1,15 @@
 "use strict";
 
-var gulp=require('gulp');
-var connect=require('gulp-connect');
-var sourcemaps=require('gulp-sourcemaps');
-var concat = require('gulp-concat');
-var config=require('./gulpfile.config')();
-var util=require('gulp-util');
+var gulp=require('gulp'),
+    connect=require('gulp-connect'),
+    sourcemaps=require('gulp-sourcemaps'),
+    concat = require('gulp-concat'),
+    config=require('./gulpfile.config')(),
+    util=require('gulp-util'),
+    less = require('gulp-less'),
+    rename = require('gulp-rename'),
+    minifycss = require('gulp-minify-css'),
+    uglify = require('gulp-uglify');
 
 log('gulp started');
 
@@ -18,8 +22,8 @@ gulp.task('connect',function () {
     });
 });
 
-gulp.task('javascript', function() {
-    log('javascript concat');
+gulp.task('build-js', function() {
+    log('build-js');
     return gulp.src(config.paths.js)
       .pipe(sourcemaps.init())
       .pipe(concat('all.js'))
@@ -27,10 +31,23 @@ gulp.task('javascript', function() {
       .pipe(gulp.dest(config.paths.dest));
   });
 
-gulp.task('watch',function(){
-    gulp.watch(config.paths.js,['javascript']);
+gulp.task('build-less', function(){
+    gulp.src(config.paths.less)
+        .pipe(less({ compress: false }))
+        .on('error', function(e){console.log(e);} )
+        .pipe(gulp.dest('src/css/'))
+        .pipe(rename({ suffix: '.min' })) 
+        .pipe(minifycss())
+        .pipe(gulp.dest('src/css/')); 
 });
 
+gulp.task('watch',function(){
+    gulp.watch(config.paths.less, ['build-less']);
+    gulp.watch(config.paths.js,['build-js']);
+});
+
+//fix 'build-less'
+gulp.task('build',['build-js']);
 
 function log(msg) {
     if(typeof(msg)==='object'){
@@ -45,4 +62,4 @@ function log(msg) {
 }
 
 
-gulp.task('default',["javascript","connect",'watch']);
+gulp.task('default',['build','watch',"connect"]);

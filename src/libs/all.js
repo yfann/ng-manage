@@ -1,0 +1,8 @@
+'use strict';
+
+var myAppModule=angular.module('myApp',[]);
+
+myAppModule.controller('myController',function($scope){
+
+});
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiJhbGwuanMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XHJcblxyXG52YXIgbXlBcHBNb2R1bGU9YW5ndWxhci5tb2R1bGUoJ215QXBwJyxbXSk7XHJcblxyXG5teUFwcE1vZHVsZS5jb250cm9sbGVyKCdteUNvbnRyb2xsZXInLGZ1bmN0aW9uKCRzY29wZSl7XHJcblxyXG59KTsiXX0=
