@@ -45,6 +45,9 @@
     "videogular-buffering": "~0.7.0",
     "videogular-overlay-play": "~0.7.0",
     "videogular-poster": "~0.7.0",
-    "videogular-ima-ads": "~0.7.0"
+    "videogular-ima-ads": "~0.7.0",
+    "angular-translate-storage-cookie": "~2.13.0",
+    "angular-translate-storage-local": "~2.13.0",
+    "angular-translate-loader-static-files": "~2.13.0"
   }
 }

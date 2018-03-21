@@ -16,6 +16,14 @@ angular.module('app')
         ['$stateProvider', '$urlRouterProvider',
             function ($stateProvider, $urlRouterProvider) {
 
+            $urlRouterProvider.otherwise('/app');
+            
+            $stateProvider
+                .state('app', {
+                    abstract: true,
+                    url: '/app',
+                    templateUrl: 'tpl/app.html'
+                })
             }
         ]
     );
