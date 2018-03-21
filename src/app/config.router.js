@@ -20,7 +20,7 @@ angular.module('app')
             
             $stateProvider
                 .state('app', {
-                    abstract: true,
+                    //abstract: true,
                     url: '/app',
                     templateUrl: 'tpl/app.html'
                 })
