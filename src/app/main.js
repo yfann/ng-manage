@@ -12,7 +12,17 @@ angular.module('app')
 
       // config
       $scope.app = {
-       
+        settings: {
+          themeID: 1,
+          navbarHeaderColor: 'bg-black',
+          navbarCollapseColor: 'head-lightblue',
+          asideColor: 'aside-blue',
+          headerFixed: true,
+          asideFixed: false,
+          asideFolded: false,
+          asideDock: false,
+          container: false
+        }
       }
 
       // save settings to local storage
