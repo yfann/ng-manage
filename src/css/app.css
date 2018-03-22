@@ -3268,6 +3268,12 @@ a.text-black:hover {
   background-color: #E3EAF3;
   color: white;
 }
+.nav li a.navblue {
+  color: white;
+}
+.nav li a.navblue:hover {
+  background-color: #36aeea;
+}
 .pos-rlt {
   position: relative;
 }
