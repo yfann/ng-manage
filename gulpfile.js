@@ -32,7 +32,7 @@ gulp.task('build-js', function() {
   });
 
 gulp.task('build-less', function(){
-    gulp.src(config.paths.less)
+    gulp.src(config.paths.appless)
         .pipe(less({ compress: false }))
         .on('error', function(e){console.log(e);} )
         .pipe(gulp.dest('src/css/'))
@@ -47,7 +47,7 @@ gulp.task('watch',function(){
 });
 
 //fix 'build-less'
-gulp.task('build',['build-js']);
+gulp.task('build',['build-js','build-less']);
 
 function log(msg) {
     if(typeof(msg)==='object'){

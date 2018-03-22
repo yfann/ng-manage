@@ -9,3 +9,4 @@
 + `npm install`
 + `bower install`
 + `gulp`
++ `gulp build` *only for build*
