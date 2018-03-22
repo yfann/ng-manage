@@ -16,13 +16,29 @@ angular.module('app')
         ['$stateProvider', '$urlRouterProvider',
             function ($stateProvider, $urlRouterProvider) {
 
-            $urlRouterProvider.otherwise('/app');
+            $urlRouterProvider.otherwise('/app/form');
             
             $stateProvider
                 .state('app', {
-                    //abstract: true,
+                    abstract: true,
                     url: '/app',
                     templateUrl: 'tpl/app.html'
+                })
+                .state('app.home', {
+                    url: '/home',
+                    templateUrl: 'tpl/home.html'
+                })
+                .state('app.form', {
+                    url: '/form',
+                    templateUrl: 'tpl/form.html'
+                })
+                .state('app.list', {
+                    url: '/form',
+                    templateUrl: 'tpl/form.html'
+                })
+                .state('app.table', {
+                    url: '/form',
+                    templateUrl: 'tpl/form.html'
                 })
             }
         ]

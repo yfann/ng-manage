@@ -48,4 +48,7 @@ angular.module('app')
           return (/iPhone|iPod|iPad|Silk|Android|BlackBerry|Opera Mini|IEMobile/).test(ua);
       }
 
+      $scope.$on('$stateChangeStart',function(event, toState, toParams, fromState, fromParams){
+
+      });
   }]);
