@@ -16,7 +16,7 @@ angular.module('app')
         ['$stateProvider', '$urlRouterProvider',
             function ($stateProvider, $urlRouterProvider) {
 
-            $urlRouterProvider.otherwise('/app/form');
+            $urlRouterProvider.otherwise('/app/home');
             
             $stateProvider
                 .state('app', {
@@ -26,19 +26,27 @@ angular.module('app')
                 })
                 .state('app.home', {
                     url: '/home',
-                    templateUrl: 'tpl/base.html'
+                    templateUrl: 'tpl/home.html'
                 })
-                .state('app.form', {
-                    url: '/form',
-                    templateUrl: 'tpl/form.html'
+                .state('app.buttons', {
+                    url: '/buttons',
+                    templateUrl: 'tpl/ui_buttons.html'
                 })
-                .state('app.list', {
-                    url: '/list',
-                    templateUrl: 'tpl/list.html'
+                .state('app.bootstrap', {
+                    url: '/bootstrap',
+                    templateUrl: 'tpl/ui_bootstrap.html'
                 })
-                .state('app.table', {
-                    url: '/table',
-                    templateUrl: 'tpl/layout.html'
+                .state('app.icons', {
+                    url: '/icons',
+                    templateUrl: 'tpl/ui_icons.html'
+                })
+                .state('app.toaster', {
+                    url: '/toaster',
+                    templateUrl: 'tpl/ui_toaster.html'
+                })
+                .state('app.grid', {
+                    url: '/grid',
+                    templateUrl: 'tpl/ui_grid.html'
                 })
             }
         ]
