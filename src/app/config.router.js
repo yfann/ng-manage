@@ -26,19 +26,19 @@ angular.module('app')
                 })
                 .state('app.home', {
                     url: '/home',
-                    templateUrl: 'tpl/home.html'
+                    templateUrl: 'tpl/base.html'
                 })
                 .state('app.form', {
                     url: '/form',
                     templateUrl: 'tpl/form.html'
                 })
                 .state('app.list', {
-                    url: '/form',
-                    templateUrl: 'tpl/form.html'
+                    url: '/list',
+                    templateUrl: 'tpl/list.html'
                 })
                 .state('app.table', {
-                    url: '/form',
-                    templateUrl: 'tpl/form.html'
+                    url: '/table',
+                    templateUrl: 'tpl/layout.html'
                 })
             }
         ]

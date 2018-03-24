@@ -3268,10 +3268,14 @@ a.text-black:hover {
   background-color: #E3EAF3;
   color: white;
 }
-.nav li a.navblue {
+.nav li a.nav-blue {
   color: white;
+  background-color: #4C637B;
 }
-.nav li a.navblue:hover {
+.nav li a.nav-blue:hover {
+  background-color: #36aeea;
+}
+.nav li a.nav-blue:focus {
   background-color: #36aeea;
 }
 .pos-rlt {
