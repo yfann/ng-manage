@@ -2,8 +2,7 @@
   "name": "ng-manage",
   "description": "",
   "main": "",
-  "authors": [
-  ],
+  "authors": [],
   "license": "ISC",
   "homepage": "",
   "private": true,
@@ -37,7 +36,6 @@
     "angular-ui-select": "~0.8.3",
     "angular-ui-calendar": "latest",
     "angularjs-toaster": "~0.4.8",
-    "ng-grid": "~2.0.13",
     "textAngular": "~1.2.2",
     "venturocket-angular-slider": "~0.3.2",
     "videogular": "0.7.0",
@@ -48,6 +46,7 @@
     "videogular-ima-ads": "~0.7.0",
     "angular-translate-storage-cookie": "~2.13.0",
     "angular-translate-storage-local": "~2.13.0",
-    "angular-translate-loader-static-files": "~2.13.0"
+    "angular-translate-loader-static-files": "~2.13.0",
+    "angular-ui-grid": "3.2.11"
   }
 }

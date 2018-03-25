@@ -46,6 +46,10 @@ angular.module('app')
                 })
                 .state('app.grid', {
                     url: '/grid',
+                    templateUrl: 'tpl/bootstrap_grid.html'
+                })
+                .state('app.uigrid', {
+                    url: '/uigrid',
                     templateUrl: 'tpl/ui_grid.html'
                 })
             }
