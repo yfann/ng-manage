@@ -16,5 +16,7 @@ angular.module('app', [
     'oc.lazyLoad',
     'pascalprecht.translate',
     'toaster',
-    'ui.grid'
+    'ui.grid',
+    'ui.grid.edit',
+    'ui.grid.selection'
 ]);
