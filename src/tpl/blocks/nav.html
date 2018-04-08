@@ -42,5 +42,38 @@
             <span class="font-bold" translate="ui-grid"></span>
         </a>
     </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.msg" class="nav-blue">
+            <i class="icon-grid"></i>
+            <span class="font-bold" translate="message"></span>
+        </a>
+    </li>
+    <li>
+        <a href class="auto nav-blue">      
+          <span class="pull-right text-muted">
+            <i class="fa fa-fw fa-angle-right text"></i>
+            <i class="fa fa-fw fa-angle-down text-active"></i>
+          </span>
+          <i class="glyphicon glyphicon-stats icon"></i>
+          <span class="font-bold" translate="samples"></span>
+        </a>
+        <ul class="nav nav-sub dk">
+          <li class="nav-sub-header">
+            <a href class="nav-blue">
+              <span translate="subMenu"></span>
+            </a>
+          </li>
+          <li ui-sref-active="active">
+            <a ui-sref="app.pwd" class="nav-blue">
+              <span>change pwd</span>
+            </a>
+          </li>
+          <li ui-sref-active="active">
+            <a ui-sref="app.sub2" class="nav-blue">
+              <span>sub2</span>
+            </a>
+          </li>
+        </ul>
+      </li>
 </ul>
 <!-- / list -->

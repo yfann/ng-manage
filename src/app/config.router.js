@@ -52,6 +52,14 @@ angular.module('app')
                     url: '/uigrid',
                     templateUrl: 'tpl/ui_grid.html'
                 })
+                .state('app.pwd', {
+                    url: '/pwd',
+                    templateUrl: 'tpl/samples/edit_pwd.html'
+                })
+                .state('app.msg', {
+                    url: '/msg',
+                    templateUrl: 'tpl/ui_message.html'
+                })
             }
         ]
     );

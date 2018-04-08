@@ -1,5 +1,4 @@
-angular.module('app')
-    .controller('GridCtrl', ['$scope', function ($scope) {
+app.controller('GridCtrl', ['$scope', function ($scope) {
         $scope.gridOptions = {
             columnDefs: [
                 {field: 'id', displayName: 'Id'},

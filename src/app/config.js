@@ -22,3 +22,18 @@ var app =
       $translateProvider.preferredLanguage('zh_cn');
       $translateProvider.useLocalStorage();
     }]);
+
+// 翻译快捷方式
+var T = {};
+// 本地存储快捷方式
+var S = {};
+app.run(['$translate', '$localStorage',
+        function ($translate, $localStorage) {
+            // 定义翻译快捷方式
+            T = function (key) {
+                return $translate.instant(key);
+            };
+
+            S = $localStorage;
+        }
+    ]);
