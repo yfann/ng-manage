@@ -60,6 +60,10 @@ angular.module('app')
                     url: '/msg',
                     templateUrl: 'tpl/ui_message.html'
                 })
+                .state('app.form', {
+                    url: '/form',
+                    templateUrl: 'tpl/samples/form.html'
+                })
             }
         ]
     );
