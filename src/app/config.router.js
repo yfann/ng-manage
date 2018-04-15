@@ -64,6 +64,10 @@ angular.module('app')
                     url: '/form',
                     templateUrl: 'tpl/samples/form.html'
                 })
+                .state('app.custom_form', {
+                    url: '/customform',
+                    templateUrl: 'tpl/samples/custom_form.html'
+                })
             }
         ]
     );
