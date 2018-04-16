@@ -1,0 +1,14 @@
+{
+    "status": 0,
+    "msg": "OK",
+    "data": [
+        {
+            "name":"男",
+            "value":1
+        },
+        {
+            "name":"女",
+            "value":0
+        }
+    ]
+}

@@ -1,20 +1,20 @@
 angular.module('httpService', []).
     service('mockService', ['$q', '$timeout', '$http', '$state', 
     function ($q, $timeout, $http, $state) {
-        this.post = function (url, params) {
+        this.get = function (url, params) {
             var deferred = $q.defer();
-            url = "/data" + url + ".json";
+            url = "/mock_data/" + url + ".json";
             //view.loading();
-            $http.post(url, params).then(function (result) {
-                var data = result.data;
-                if (result.status == 0) {
-                    deferred.resolve(data);
+            $http.get(url).then(function (result) {
+                var d = result.data;
+                if (d.status == 0) {
+                    deferred.resolve(d.data);
                 } else {
-                    switch (result.status) {
+                    switch (d.status) {
                         default:
                             // view.alert(result.msg);
                             //$state.go("login");
-                            deferred.reject(result);
+                            deferred.reject(d);
                     }
                 }
             }, function (x) {
