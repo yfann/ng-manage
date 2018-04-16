@@ -4,6 +4,14 @@
 
     }
   },
+  "header":{
+    "user":{
+      "setting":"个人设置",
+      "edit_pwd":"修改密码",
+      "lockme":"锁屏",
+      "logout":"注销登录"
+    }
+  },
   "button":{
     "save":"保存"
   }
