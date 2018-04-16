@@ -18,5 +18,6 @@ angular.module('app', [
     'toaster',
     'ui.grid',
     'ui.grid.edit',
-    'ui.grid.selection'
+    'ui.grid.selection',
+    'httpService'
 ]);
